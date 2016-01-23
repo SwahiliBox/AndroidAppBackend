@@ -1,0 +1,15 @@
+{
+  "name": "SwahiliBox",
+  "version": "0.0.1",
+  "description": "An application for administrators at swahilibox, for interaction with community members through the SwahiliBox Android App",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SwahiliBox/AndroidAppBackend.git"
+  },
+  "author": "Japheth Obala",
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-util": "^2.2.20",
+    "gulp-webserver": "^0.8.1"
+  }
+}

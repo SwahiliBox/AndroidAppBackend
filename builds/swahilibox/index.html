@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" ng-app="swahiliboxApp">
+<head>
+    <!-- Makes the layout looks nice on a mobile device -->
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta charset="UTF-8">
+  <title>SwahiliBox</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!-- Links to the angular framework -->
+  <script type="text/javascript" src="js/lib/angular/angular.min.js"></script>
+
+  <!-- Links to the angular animate module, this allows for animation of components -->
+  <script type="text/javascript" src="js/lib/angular/angular-animate.min.js"></script>
+
+  <!-- Links to the angular route module, makes it possible for parameters to be passed from the url -->
+  <script type="text/javascript" src="js/lib/angular/angular-route.min.js"></script>
+
+  <!-- Firebase -->
+  <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+
+  <!-- AngularFire -->
+  <script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script>
+
+  <!-- Links to angulars simple-login service  -->
+  <script type="text/javascript" src="js/simple-login/1.6.4/firebase-simple-login.js"></script>
+
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/controllers/register.js"></script>
+  <script type="text/javascript" src="js/controllers/meetings.js"></script>
+
+
+</head>
+<body>
+<header>
+	<!-- The navigation is inlude from an external file -->
+	<nav  ng-include="'views/nav.html'"></nav>
+</header>
+<div >
+  <!-- serves a view from the template url defined in app.js -->
+  <main ng-view></main>
+</div>
+</body>
+</html>
